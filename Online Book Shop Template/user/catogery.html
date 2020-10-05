@@ -1,0 +1,465 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Book</title>
+    <meta ne="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Galada&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg fixed-top" style="padding: 15px 15px; background-color: white;">
+        <a class="navbar-brand" href="index.html" style="font-family: 'Galada', cursive; font-size: 30px;">
+বই পোকা.<sub>কম</sub> </a>
+        <div class="input-group" style="width: 50%; margin-left: 10%;">
+          <input type="text" class="form-control" placeholder="Search" style="border: 0.5px solid gray; border-bottom: 2px solid #FF5733;">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+            <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div style="margin-left: 10%;">
+          <button class="btn"  type="button" style="border:0.5px solid black;">
+          <i class="fa fa-shopping-bag"  aria-hidden="true" ></i>
+          </button>
+        </div>
+        <div style="margin-left: 2%;">
+          <a class="btn" type="button" href="login.html" style="border:0.5px solid black;">Sign In</a>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar navbar-expand-sm  justify-content-center" style="margin-top: 80px; border-bottom: 0.5px solid blue; background-color:white;">
+      <ul class="navbar-nav"style="font-family: 'Galada', cursive; font-size: 20px;">
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="#">বই</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="#">গিফট</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ব্লগ</a>
+        </li>
+      </ul>
+    </div>
+    <!---- end nev---->
+<br>
+<br>
+
+    <div class="catogery">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+<div class="sort_list">
+            <div class="sort__heading">
+              <div class="row">
+              <div class="col-sm-6"> <h2><i class="fa fa-toggle-on" aria-hidden="true"></i>Sort</h2></div>
+                                       
+                                         <div class="col-sm-6 text-center" style="padding: 10px 10px;"> <button id="js--sort_reset_btn" >RESET</button></div>
+                                       
+                                    </div>
+                                  </div>
+<hr>
+                                    <div class="sort__content text-left">
+                                        <ul>
+                                            
+                                                <li>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="SOLD_COUNT_DESC" name="sort" value="SOLD_COUNT_DESC" class="custom-control-input">
+                                                        <label class="custom-control-label" for="SOLD_COUNT_DESC">
+                                                                Best Seller
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            
+                                                <li>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="ID_DESC" name="sort" value="ID_DESC" class="custom-control-input">
+                                                        <label class="custom-control-label" for="ID_DESC">
+                                                                New Released
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            
+                                                <li>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="PRICE_ASC" name="sort" value="PRICE_ASC" class="custom-control-input">
+                                                        <label class="custom-control-label" for="PRICE_ASC">
+                                                                Price - Low to High
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            
+                                                <li>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="PRICE_DESC" name="sort" value="PRICE_DESC" class="custom-control-input">
+                                                        <label class="custom-control-label" for="PRICE_DESC">
+                                                                Price - High to Low
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            
+                                                <li>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="DISCOUNT_ASC" name="sort" value="DISCOUNT_ASC" class="custom-control-input">
+                                                        <label class="custom-control-label" for="DISCOUNT_ASC">
+                                                                Discount - Low to High
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            
+                                                <li>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="DISCOUNT_DESC" name="sort" value="DISCOUNT_DESC" class="custom-control-input">
+                                                        <label class="custom-control-label" for="DISCOUNT_DESC">
+                                                                Discount - High to Low
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                  </div>
+
+
+                                  <br>
+                                  <div class="authors-all">
+                                    <div class="container">
+                                     <span>Authors-all</span>
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                       <div class="filter">
+                                    <div class="filter__heading">
+                                        
+                                        <div class="filter__heading--lower-part">
+                                            
+    
+        
+                       <button class="btn btn-light" type="button" input_id="categoryIds_2411">
+                           <i class="ion-ios-close-empty"></i>
+                ছাত্রজীবন উন্নয়ন
+                            </button>
+        
+    
+        
+    
+
+                                        </div>
+                                    </div>
+                                    
+                              
+
+
+
+
+    <div class="filter__content">
+        <h2>Categories</h2>
+       
+        <ul class="scroll text-left" id="categoryIds">
+            
+                
+                    <li search_data="ছাত্রজীবন উন্নয়ন Student life Development ">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="categoryIds" checked="" value="2411" id="categoryIds_2411">
+                            <label class="custom-control-label" for="categoryIds_2411">
+                                ছাত্রজীবন উন্নয়ন
+                            </label>
+                        </div>
+                    </li>
+  
+                
+                    <li search_data="আত্ম উন্নয়ন ও মোটিভেশন  Self development and motivation ">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="categoryIds" value="" id="">
+                            <label class="custom-control-label" for="categoryIds_2413">
+                                আত্ম উন্নয়ন ও মোটিভেশন 
+                            </label>
+                        </div>
+                    </li>
+                
+            
+                
+                    <li search_data="বাংলাদেশ ভ্রমণ Travelling Bangladesh">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="categoryIds" value="" id="">
+                            <label class="custom-control-label" for="categoryIds_657">
+                                বাংলাদেশ ভ্রমণ
+                            </label>
+                        </div>
+                    </li>
+                
+            
+                
+                    <li search_data="যোগাযোগ Communication">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="categoryIds" value="" id="">
+                            <label class="custom-control-label" for="categoryIds_946">
+                                যোগাযোগ
+                            </label>
+                        </div>
+                    </li>
+                
+            
+        </ul>
+    </div>
+
+                                    
+            
+
+
+                                </div>
+                                      </div>
+                                      
+                                    </div>
+                                    
+</div>
+
+                                  </div>
+                                  
+
+          </div>
+          <div class="col-sm-9">
+            <div class="all_book">
+              <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  
+<div class="product-wrapper mb-30">
+          <div class="product-img">
+            <a href="#">
+              <img src="img/a1.jpg" alt="" width="100%" height="100%">
+            </a>
+            
+            <div class="product-action">
+              
+              <a class="animate" title="Add To Cart" href="#">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="product-content text-center">
+            <h5><a href="#">Homme Tapered Smart </a></h5>
+            <span>$115.00</span>
+          </div>
+        </div>
+                </div>
+                        <div class="col-sm-3">
+                  
+<div class="product-wrapper mb-30">
+          <div class="product-img">
+            <a href="#">
+              <img src="img/a1.jpg" alt="" width="100%" height="100%">
+            </a>
+            
+            <div class="product-action">
+              
+              <a class="animate" title="Add To Cart" href="#">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="product-content text-center">
+            <h5><a href="#">Homme Tapered Smart </a></h5>
+            <span>$115.00</span>
+          </div>
+        </div>
+                </div>
+                        <div class="col-sm-3">
+                  
+<div class="product-wrapper mb-30">
+          <div class="product-img">
+            <a href="#">
+              <img src="img/a1.jpg" alt="" width="100%" height="100%">
+            </a>
+            
+            <div class="product-action">
+              
+              <a class="animate" title="Add To Cart" href="#">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="product-content text-center">
+            <h5><a href="#">Homme Tapered Smart </a></h5>
+            <span>$115.00</span>
+          </div>
+        </div>
+                </div>
+                        <div class="col-sm-3">
+                  
+<div class="product-wrapper mb-30">
+          <div class="product-img">
+            <a href="#">
+              <img src="img/a2.jpeg" alt="" width="100%" height="100%">
+            </a>
+            
+            <div class="product-action">
+              
+              <a class="animate" title="Add To Cart" href="#">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="product-content text-center">
+            <h5><a href="#">Homme Tapered Smart </a></h5>
+            <span>$115.00</span>
+          </div>
+        </div>
+                </div>
+                <div class="col-sm-3">
+                  
+<div class="product-wrapper mb-30">
+          <div class="product-img">
+            <a href="#">
+              <img src="img/a2.jpeg" alt="" width="100%" height="100%">
+            </a>
+            
+            <div class="product-action">
+              
+              <a class="animate" title="Add To Cart" href="#">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="product-content text-center">
+            <h5><a href="#">Homme Tapered Smart </a></h5>
+            <span>$115.00</span>
+          </div>
+        </div>
+                </div>
+
+<div class="col-sm-3">
+                  
+<div class="product-wrapper mb-30">
+          <div class="product-img">
+            <a href="#">
+              <img src="img/a2.jpeg" alt="" width="100%" height="100%">
+            </a>
+            
+            <div class="product-action">
+              
+              <a class="animate" title="Add To Cart" href="#">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="product-content text-center">
+            <h5><a href="#">Homme Tapered Smart </a></h5>
+            <span>$115.00</span>
+          </div>
+        </div>
+                </div>
+
+<div class="col-sm-3">
+                  
+<div class="product-wrapper mb-30">
+          <div class="product-img">
+            <a href="#">
+              <img src="img/a2.jpeg" alt="" width="100%" height="100%">
+            </a>
+            
+            <div class="product-action">
+              
+              <a class="animate" title="Add To Cart" href="#">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="product-content text-center">
+            <h5><a href="#">Homme Tapered Smart </a></h5>
+            <span>$115.00</span>
+          </div>
+        </div>
+                </div>
+
+<div class="col-sm-3">
+                  
+<div class="product-wrapper mb-30">
+          <div class="product-img">
+            <a href="#">
+              <img src="img/a2.jpeg" alt="" width="100%" height="100%">
+            </a>
+            
+            <div class="product-action">
+              
+              <a class="animate" title="Add To Cart" href="#">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="product-content text-center">
+            <h5><a href="#">Homme Tapered Smart </a></h5>
+            <span>$115.00</span>
+          </div>
+        </div>
+                </div>
+
+
+                
+                
+
+              </div>                
+
+              </div>
+              
+
+            </div>
+            
+
+
+          </div>
+          
+
+        </div>
+        
+
+      </div>
+      
+    </div>
+   
+
+
+  <br>
+  <br>
+  <div class="container-fluid" style="background-color:white;">
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4 text-center">
+        <p>@2020 fin.com</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/googlemap.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>

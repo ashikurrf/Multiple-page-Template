@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            background: #56CCF2;
+            background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+            background: linear-gradient(to right, #2F80ED, #56CCF2);
+            color: white;
+        }
+
+        .left-side {
+
+            background: #000046;
+            background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+            background: linear-gradient(to right, #1CB5E0, #000046);
+            color: white;
+        }
+        .nav-pills li a{
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .nav-pills li a:hover{
+            background-color: #337ab7;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        
+        <div class = "row">
+            <div class = "col-sm-4 col-sm-offset-4 text-center">
+                <h3 style = "letter-spacing: 2px;border: 2px solid white; padding: 15px 0px; border-radius: 5px;"><strong>Dashboard</strong></h3>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-12">
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                    <li><a data-toggle="pill" href="#addproduct">Add Product</a></li>
+                    <li><a data-toggle="pill" href="#viewproduct">View Product</a></li>
+                </ul>
+                <hr style="margin-top: 0px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <div class = "row">
+                            <div class = "col-sm-4 col-sm-offset-4 text-center">
+                                <h4 style = "letter-spacing: 2px;border-left: 2px solid white;border-right: 2px solid white; padding: 10px 0px; border-radius: 5px;"><strong><em>Home</em></strong></h4>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="addproduct" class="tab-pane fade">
+                        <!-- Add Product -->
+                        <div class = "row">
+                            <div class = "col-sm-4 col-sm-offset-4 text-center">
+                                <h4 style = "letter-spacing: 2px;border-left: 2px solid white;border-right: 2px solid white; padding: 10px 0px; border-radius: 5px;"><strong><em>Add Product</em></strong></h4>
+                            </div>
+                        </div>
+
+                        <div class = "row">
+                            <div class = "col-sm-6 col-sm-offset-3">
+                                <form method = "post" action="" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        
+                                        <input type="text" class="form-control input-box" name="bookTitle" placeholder="Book Title">
+                                    </div>
+                                    <div class="form-group">
+                                        
+                                        <input type="text" class="form-control input-box" name="authors" placeholder="Authors Name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="productCatagory" style="color: white;">Select Catagory</label>
+                                        <select class="form-control" name="productCatagory">
+                                        </select>
+                                    </div>
+
+                                     <div class="form-group">
+                                        <input type="text" class="form-control input-box" name="productPrice" placeholder="Product Unit Price">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="15" name="description" placeholder = "Product Description"></textarea>
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-box" name="productStock" placeholder="Quantity In Stock">
+                                    </div>
+                                   
+                                    
+                                  
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-box" name="productTag" placeholder="Product Tag">
+                                        <h5><em>Multiple product tag seperated by coma</em></h5>
+                                    </div>
+
+                                    <div class="file btn btn-warning" name = "uploadImageBtn" style = "position: relative;overflow: hidden;">
+                                        Upload Product Image
+                                        <input type="file" name="productImage" style = "position: absolute;font-size: 50px;opacity: 0;right: 0;top: 0;"/>
+                                    </div>
+                                    <br><br>
+                                    <div class = "row">
+                                        <div class = "col-sm-2 col-sm-offset-5 text-center">
+                                            <button type="submit" class="btn btn-success" name="addProductButton">Add Product</button>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="viewproduct" class="tab-pane fade">
+                        <!-- Show Product -->
+                        <div class = "row">
+                            <div class = "col-sm-4 col-sm-offset-4 text-center">
+                                <h4 style = "letter-spacing: 2px;border-left: 2px solid white;border-right: 2px solid white; padding: 10px 0px; border-radius: 5px;"><strong><em>View Product</em></strong></h4>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

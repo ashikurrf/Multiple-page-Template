@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Book</title>
+        <meta ne="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Galada&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg fixed-top" style="padding: 15px 15px; background-color: white;">
+                <a class="navbar-brand" href="index.html" style="font-family: 'Galada', cursive; font-size: 30px;">
+                বই পোকা.<sub>কম</sub> </a>
+                <div class="input-group" style="width: 50%; margin-left: 10%;">
+                    <input type="text" class="form-control" placeholder="Search" style="border: 0.5px solid gray; border-bottom: 2px solid #FF5733;">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                        <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div style="margin-left: 10%;">
+                    <button class="btn" type="button" style="border:0.5px solid black;">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div style="margin-left: 2%;">
+                    <button class="btn" type="button" style="border:0.5px solid black;">Sign In</button>
+                </div>
+            </nav>
+        </div>
+        <div class="navbar navbar-expand-sm  justify-content-center" style="margin-top: 80px; border-bottom: 0.5px solid blue; background-color:white;">
+            <ul class="navbar-nav" style="font-family: 'Galada', cursive; font-size: 20px;">
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">বই</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">গিফট</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ব্লগ</a>
+                </li>
+            </ul>
+        </div>
+        <!---- end nev---->
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/home_delivery.png">
+                </div>
+                <div class="col-sm-7" style=" margin: 10px 18px;  background-color: white;">
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="nav nav-tabs" style="margin-left: 30%; border: none;">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#signin">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#signup">Registration</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="signin" class="container tab-pane active"><br>
+                                    <!---sign in in---->
+                                    <br>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-2"></div>
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <form>
+                                                <div class="form-group">
+                                                    <span>
+                                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                    </span>
+                                                    <input type="email" class="form-control" id="email" placeholder="     Enter email" name="email" style="border:none; border-bottom: 2px solid #0093FF;">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span>
+                                                        <i class="fa fa-key" aria-hidden="true"></i>
+                                                    </span>
+                                                    <input type="password" class="form-control" id="pwd" placeholder="     Enter password" name="pswd" style="border:none; border-bottom: 2px solid #0093FF;">
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="signup" class="container tab-pane "><br>
+                                    <!----Sign up -->
+                                    <br>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-2"></div>
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <form>
+                                                <div class="form-group">
+                                                    <span>
+                                                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                                    </span>
+                                                    <input type="text" class="form-control" id="text" placeholder="   Full name" name="Full Name" style="border:none; border-bottom: 2px solid #0093FF;">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span>
+                                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                    </span>
+                                                    <input type="email" class="form-control" id="email" placeholder="   Enter email" name="email" style="border:none; border-bottom: 2px solid #0093FF;">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span>
+                                                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                                                    </span>
+                                                    <input type="text" class="form-control" id="text" placeholder="   Mobile number" name="number" style="border:none; border-bottom: 2px solid #0093FF;">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span>
+                                                        <i class="fa fa-key" aria-hidden="true"></i>
+                                                    </span>
+                                                    <input type="password" class="form-control" id="pwd" placeholder="   Enter password" name="pswd" style="border:none; border-bottom: 2px solid #0093FF;">
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-fluid" style="background-color: white;">
+                <div class="row">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <p>Contact</p>
+                    </div>
+                </div>
+            </div>
+            <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/waypoints.min.js"></script>
+            <script src="js/jquery.counterup.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/main.js"></script>
+        </body>
+    </html>
